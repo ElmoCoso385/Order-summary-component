@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Primary */
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+
+  --verypaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--paleBlue);
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#order-summary {
+  background-color: var(--verypaleBlue);
+  border-radius: 1.25rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#order-summary img {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+#order-summary h1 {
+  color: var(--darkBlue);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+#order-summary p {
+  color: var(--desaturatedBlue);
+  font-weight: 500;
+}
+
+h4 {
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.35rem;
+}
+
+.link {
+  color: var(--brightBlue) !important;
+  text-indent: -1.75rem;
+  text-decoration-line: underline;
+  font-weight: 700 !important;
+}
+
+.proceed {
+  display: inline-block;
+  background-color: var(--brightBlue);
+  padding: 0.7rem 5rem 0.7rem 5rem;
+  border-radius: 0.625rem;
+  margin-bottom: 2rem;
+  color: var(--verypaleBlue) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 7px 32px -10.5px var(--brightBlue);
+}
+
+.cancel {
+  margin-bottom: 2.7rem;
+  font-weight: 700 !important;
+}
