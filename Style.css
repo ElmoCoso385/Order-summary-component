@@ -70,6 +70,14 @@ h4 {
   text-indent: -1.75rem;
   text-decoration-line: underline;
   font-weight: 700 !important;
+  transition: color ease 0.15s;
+  transition: text-decoration-line ease 0.15s;
+}
+
+.link:hover {
+  color: hsl(245, 83%, 68%) !important;
+  cursor: pointer;
+  text-decoration-line: none;
 }
 
 .proceed {
@@ -81,9 +89,21 @@ h4 {
   color: var(--verypaleBlue) !important;
   font-weight: 700 !important;
   box-shadow: 0 7px 32px -10.5px var(--brightBlue);
+  transition: background-color ease 0.15s;
+}
+
+.proceed:hover {
+  background-color: hsl(245, 83%, 68%) !important;
+  cursor: pointer;
 }
 
 .cancel {
   margin-bottom: 2.7rem;
   font-weight: 700 !important;
+  transition: color ease 0.15s;
+}
+
+.cancel:hover {
+  color: var(--darkBlue) !important;
+  cursor: pointer;
 }
